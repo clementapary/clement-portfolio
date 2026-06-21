@@ -5,9 +5,9 @@ import SkillList from "../components/SkillList";
 
 export default function SkillPage() {
   return (
-    <div>
+    <div className="">
+      <SectionHeader title="my Skills" />
       <Block>
-        <SectionHeader title="my Skills" />
         <div className="grid gap-4 md:grid-cols-2">
           {Skills.map((skill) => (
             <SkillList key={skill.title} skill={skill} />

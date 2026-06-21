@@ -6,7 +6,7 @@ import { Services } from "@/lib/constants";
 
 export default function ServicePage() {
   return (
-    <div className="p-8">
+    <div className="">
       <SectionHeader title="My Services" />
       <Block className="grid items-center justify-center gap-4">
         <div className="grid gap-2 md:grid-cols-3">
