@@ -3,11 +3,12 @@ import Block from "../components/Block";
 import Image from "next/image";
 import Profile from "@/public/img/cartoon-man-wearing-glasses.jpg";
 import SocialIcon from "../components/socialIcon";
+import SectionHeader from "../components/SectionHeader";
 
 export default function AboutPage() {
   return (
-    <div className="p-8">
-      <h2 className="text-xl font-bold text-blue-600">About Me</h2>
+    <div className="">
+      <SectionHeader title="About me" />
       <Block className="grid items-center justify-center gap-4 md:grid-cols-2">
         <div className="">
           <Image src={Profile} alt="hero" className="rounded-lg" />

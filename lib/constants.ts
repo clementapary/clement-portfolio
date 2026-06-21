@@ -4,7 +4,6 @@ export const LinkItems = [
   { name: "Services", href: "/services" },
   { name: "Skills", href: "/skills" },
   { name: "Projects", href: "/projects" },
-  { name: "Education", href: "/education" },
   { name: "Experince", href: "/experinces" },
   { name: "Contact", href: "/contact" },
 ];
