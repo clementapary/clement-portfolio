@@ -16,15 +16,14 @@ export default function Navbar() {
         </div>
         <div className="hidden items-center gap-3 md:flex">
           {LinkItems.map((item) => (
-            <div key={item.name} className="font-medium hover:text-zinc-400">
-              <Link
-                href={item.href}
-                className={classNames({
-                  "text-zinc-400": item.href === pathname,
-                })}
-              >
-                {item.name}
-              </Link>
+            <div
+              key={item.name}
+              className={classNames({
+                "px-2 text-lg font-bold": true,
+                "rounded-lg bg-blue-500 text-zinc-100": item.href === pathname,
+              })}
+            >
+              <Link href={item.href}>{item.name}</Link>
             </div>
           ))}
         </div>

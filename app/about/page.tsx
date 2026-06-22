@@ -9,16 +9,18 @@ export default function AboutPage() {
   return (
     <div className="">
       <SectionHeader title="About me" />
-      <Block className="grid items-center justify-center gap-4 md:grid-cols-2">
+      <Block className="grid items-center justify-center gap-8 md:grid-cols-2">
         <div className="">
           <Image src={Profile} alt="hero" className="rounded-lg" />
         </div>
-        <div className="">
-          <h3 className="text-2xl font-bold text-zinc-200">Clement Apary</h3>
-          <h3 className="text-lg font-medium text-zinc-400">
+        <div className="grid gap-4">
+          <h3 className="text-4xl font-bold text-zinc-200 md:text-6xl">
+            Clement Apary
+          </h3>
+          <h3 className="text-xl font-medium text-zinc-400">
             Web Developer | Graphic Designer | Freelancer
           </h3>
-          <p className="text-base leading-relaxed tracking-tight">
+          <p className="text-lg leading-relaxed tracking-tight">
             I am, a passionate Web Developer, Graphic Designer, and Freelancer
             based in Juba, South Sudan. I specialize in building modern,
             responsive, and user-friendly digital solutions that help
