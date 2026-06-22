@@ -13,7 +13,7 @@ export default function HeroSection() {
           <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
             Build things faster
           </h1>
-          <p className="mt-4 max-w-lg text-lg text-slate-300">
+          <p className="mt-4 max-w-lg text-lg">
             A minimalist workspace designed for high-performance development
             teams.
           </p>
@@ -24,10 +24,7 @@ export default function HeroSection() {
             >
               Get Started
             </a>
-            <a
-              href="/demo"
-              className="px-5 py-3 font-medium text-slate-300 hover:text-white"
-            >
+            <a href="/demo" className="px-5 py-3 font-medium hover:text-white">
               Live Demo →
             </a>
           </div>

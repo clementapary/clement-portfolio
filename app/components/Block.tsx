@@ -8,7 +8,7 @@ export default function Block({ className, ...rest }: BlockProps) {
   return (
     <motion.div
       className={twMerge(
-        "w-full rounded-lg border border-zinc-700 bg-zinc-900 p-8 text-white shadow-lg",
+        "w-full rounded-lg border p-8 shadow-lg dark:border-zinc-700 dark:bg-zinc-900 dark:text-white",
         className,
       )}
       {...rest}
