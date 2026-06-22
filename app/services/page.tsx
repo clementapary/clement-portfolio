@@ -11,7 +11,7 @@ export default function ServicePage() {
       <Block className="grid items-center justify-center gap-4">
         <div className="grid gap-2 md:grid-cols-3">
           {Services.map((service) => (
-            <ServiceList key={service.title} service={service} />
+            <ServiceList key={service.title} />
           ))}
         </div>
       </Block>

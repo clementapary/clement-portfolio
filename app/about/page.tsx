@@ -9,6 +9,7 @@ export default function AboutPage() {
   return (
     <div className="">
       <SectionHeader title="About me" />
+
       <Block className="grid items-center justify-center gap-8 md:grid-cols-2">
         <div className="">
           <Image src={Profile} alt="hero" className="rounded-lg" />
