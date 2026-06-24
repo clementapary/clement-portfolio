@@ -1,8 +1,7 @@
 import SectionHeader from "../components/SectionHeader";
 import Block from "../components/Block";
-import { AiFillTool, AiFillTrophy } from "react-icons/ai";
 
-import { AiOutlineCheckCircle } from "react-icons/ai";
+import { Navigation, Toolbox, Trophy } from "lucide-react";
 
 export default function ExperincePage() {
   return (
@@ -11,7 +10,7 @@ export default function ExperincePage() {
 
       <div className="grid gap-4 md:grid-cols-2">
         <Block className="space-y-4">
-          <AiFillTool className="size-10" />
+          <Toolbox className="size-10" />
           <div className="grid gap-2">
             <h1 className="text-2xl font-bold">IT & Web Development</h1>
             <p className="text-lg font-thin">
@@ -20,19 +19,19 @@ export default function ExperincePage() {
             </p>
             <ul>
               <li className="flex items-center gap-2">
-                <AiOutlineCheckCircle />
+                <Navigation />
                 Web technologies
               </li>
               <li className="flex items-center gap-2">
-                <AiOutlineCheckCircle />
+                <Navigation />
                 Database systems
               </li>
               <li className="flex items-center gap-2">
-                <AiOutlineCheckCircle />
+                <Navigation />
                 Graphic design tools
               </li>
               <li className="flex items-center gap-2">
-                <AiOutlineCheckCircle />
+                <Navigation />
                 IT support solutions
               </li>
             </ul>
@@ -40,27 +39,27 @@ export default function ExperincePage() {
         </Block>
 
         <Block className="space-y-4">
-          <AiFillTrophy className="size-10" />
+          <Trophy className="size-10" />
           <h1 className="text-2xl font-bold">Why working with me?</h1>
           <div className="">
             <div className="flex items-center gap-2">
-              <AiOutlineCheckCircle />
+              <Navigation />
               Professional and creative solutions
             </div>
             <div className="flex items-center gap-2">
-              <AiOutlineCheckCircle />
+              <Navigation />
               Modern technology approach
             </div>
             <div className="flex items-center gap-2">
-              <AiOutlineCheckCircle />
+              <Navigation />
               User-focused designs
             </div>
             <div className="flex items-center gap-2">
-              <AiOutlineCheckCircle />
+              <Navigation />
               Redivable freelance support
             </div>
             <div className="flex items-center gap-2">
-              <AiOutlineCheckCircle />
+              <Navigation />
               Passion for quadivty work
             </div>
           </div>

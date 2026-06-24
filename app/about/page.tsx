@@ -15,7 +15,7 @@ export default function AboutPage() {
           <Image src={Profile} alt="hero" className="rounded-lg" />
         </div>
         <div className="grid gap-4">
-          <h3 className="text-4xl font-bold md:text-6xl">Clement Apary</h3>
+          <h3 className="text-2xl font-bold md:text-4xl">Clement Apary</h3>
           <h3 className="text-xl font-medium">
             Web Developer | Graphic Designer | Freelancer
           </h3>
