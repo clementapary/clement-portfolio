@@ -4,58 +4,65 @@ import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { AiFillRocket } from "react-icons/ai";
-import { AiOutlineBars } from "react-icons/ai";
+import { Menu, Rocket } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   return (
-    <nav className="relative top-0 right-0 left-0 z-50 mx-auto max-w-6xl overflow-hidden py-3 backdrop-blur-lg md:fixed">
-      <div className="flex items-center justify-between gap-4 px-8">
-        <div className="flex items-center gap-2 text-2xl font-black">
-          <AiFillRocket className="size-10 rotate-45" />
-          <span>CLEMENT</span>
+    <header>
+      <nav className="relative flex items-center justify-between gap-2">
+        <div className="flex items-center gap-1.5">
+          <Rocket className="size-10" />
+          <span className="text-xl font-black md:text-2xl">
+            Clement Portfolio
+          </span>
         </div>
-        <div className="hidden items-center gap-3 md:flex">
-          {LinkItems.map((item) => (
-            <div
-              key={item.name}
-              className={classNames({
-                "px-2 text-lg font-bold": true,
-                "rounded-lg bg-blue-500 text-zinc-100": item.href === pathname,
-              })}
-            >
-              <Link href={item.href}>{item.name}</Link>
-            </div>
-          ))}
+        <div className="hidden md:block">
+          <ul className="flex gap-1.5">
+            {LinkItems.map((link) => (
+              <li
+                key={link.name}
+                className={classNames({
+                  "px-4 py-2 text-lg font-medium": true,
+                  "rounded-lg bg-blue-500 text-zinc-100":
+                    pathname === link.href,
+                })}
+              >
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
+        {open && (
+          <div className="absolute top-12 z-50 block w-full bg-zinc-100 p-6 text-zinc-900 md:hidden dark:bg-zinc-900 dark:text-zinc-100">
+            <ul className="flex flex-col gap-1.5">
+              {LinkItems.map((link) => (
+                <li
+                  key={link.name}
+                  className={classNames({
+                    "px-4 py-2 text-lg font-medium": true,
+                    "rounded-lg bg-blue-500 text-zinc-100":
+                      pathname === link.href,
+                  })}
+                >
+                  <Link href={link.href}>{link.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div className="flex items-center gap-1.5">
+          <div className="block md:hidden">
+            <button onClick={() => setOpen(!open)}>
+              <Menu className="ring:border-zinc-700 cursor-pointer rounded hover:ring hover:ring-offset-2" />
+            </button>
+          </div>
 
-        <div className="md:hidden">
-          <button onClick={() => setOpen(!open)} className="cursor-pointer">
-            <AiOutlineBars className="size-6" />
-          </button>
-          {open && <NavMobile />}
-        </div>
-        <div className="">
           <ThemeToggle />
         </div>
-      </div>
-    </nav>
-  );
-}
-
-export function NavMobile() {
-  return (
-    <nav className="absolute -top-12">
-      <ul className="">
-        {LinkItems.map((link) => (
-          <li key={link.name} className="block">
-            <a href={link.href}>{link.name}</a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+      </nav>
+    </header>
   );
 }
