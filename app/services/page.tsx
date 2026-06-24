@@ -17,7 +17,9 @@ export default function ServicePage() {
               <Block className="p-2 text-xl font-bold text-blue-400">
                 {service.title}
               </Block>
-              <p className="p-2 text-base text-zinc-200">body</p>
+              <p className="items-start p-2 text-base text-zinc-200">
+                {service.body}
+              </p>
               {service.services.map((service) => (
                 <Block
                   key={service.title}

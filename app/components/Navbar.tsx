@@ -14,9 +14,9 @@ export default function Navbar() {
     <header>
       <nav className="relative flex items-center justify-between gap-2">
         <div className="flex items-center gap-1.5">
-          <Rocket className="size-10" />
-          <span className="text-xl font-black md:text-2xl">
-            Clement Portfolio
+          <Rocket className="size-6" />
+          <span className="text-xl font-black uppercase md:text-2xl">
+            Clement
           </span>
         </div>
         <div className="hidden md:block">
