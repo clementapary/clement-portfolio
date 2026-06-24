@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className="">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main className="m-auto min-h-screen max-w-5xl">
-            <div className="p-6">
+            <div className="mb-24">
               <Navbar />
             </div>
             <section className="p-6">{children}</section>

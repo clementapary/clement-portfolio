@@ -1,11 +1,11 @@
 export const LinkItems = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Skills", href: "/skills" },
-  { name: "Projects", href: "/projects" },
-  { name: "Experince", href: "/experinces" },
-  { name: "Contact", href: "/contact" },
+  { name: "About", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Experince", href: "#experinces" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export const Services = [
